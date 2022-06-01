@@ -1,0 +1,12 @@
+<div id="navbar">
+    <img src="assets/icon.png" [routerLink]="'/'">
+    <div id="buttons">
+        <button class="headingLink" *ngFor="let button of buttons" ngClass="{{ button.label | lowercase }}-btn" [routerLink]="button.url">
+            <img src="assets/download.png" *ngIf="button.label == 'Download'">
+            {{ button.label }}
+        </button>
+    </div>
+</div>
+<div id="body">
+    <router-outlet></router-outlet>
+</div>
