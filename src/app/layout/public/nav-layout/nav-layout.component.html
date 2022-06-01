@@ -1,11 +1,13 @@
 <div id="navbar">
     <img src="assets/imgs/icon.png" [routerLink]="'/'">
     <div id="buttons">
-        <button class="headingLink" *ngFor="let button of buttons" ngClass="{{ button.label | lowercase }}-btn" [routerLink]="button.url">
-            <img src="assets/imgs/download.png" *ngIf="button.label == 'Download'">
+        <button *ngFor="let button of buttons" ngClass="{{ button.label | lowercase }}-btn" [routerLink]="button.url">
             {{ button.label }}
         </button>
     </div>
+    <button class="download" routerLink="/download">
+        <img src="assets/imgs/download.png">
+    </button>
 </div>
 <div id="body">
     <router-outlet></router-outlet>

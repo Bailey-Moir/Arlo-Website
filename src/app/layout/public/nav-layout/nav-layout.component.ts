@@ -10,8 +10,8 @@ export class NavLayoutComponent implements AfterViewInit
 {
     buttons: NavButton[] = [
         {
-            label: 'Download',
-            url: '/download'
+            label: 'Home',
+            url: '/'
         },
         {
             label: 'Leaderboard',
