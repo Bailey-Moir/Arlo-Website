@@ -1,0 +1,33 @@
+.download-platforms {
+    padding-top: 1.666vw;
+    display: flex;
+
+    >div {
+        width:30vw;
+        margin-left: 1.6666vw;
+        margin-right: 1.6666vw;
+
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.195);
+        border-radius: 10px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        a {
+            background: white;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.195);
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        img { width: 50%; }
+    }
+}

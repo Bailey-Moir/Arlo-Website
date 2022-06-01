@@ -1,0 +1,7 @@
+<div class="download-platforms">
+    <div *ngFor="let platform of platforms" ngClass="{{ platform | lowercase }}-platform">
+        <img src="assets/imgs/{{ platform | lowercase }}.png">
+        <h1>{{ platform }}</h1>
+        <a href="assets/downloads/Arlo ({{platform | uppercase | slice:0:3}}).zip" download="Arlo ({{platform | uppercase | slice:0:3}}).zip">Download</a>
+    </div>
+</div>
