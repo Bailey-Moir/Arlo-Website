@@ -4,4 +4,33 @@
     border: none;
     background-color: transparent;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center-x, .center-y, .center {
+    display: flex;
+    align-items: center;
+
+    &.center-x {
+        flex-direction: column;
+    }
+    &.center-y { 
+        flex-direction: row;
+    }
+    &.center { 
+        justify-content: center;
+    }
+}
+
+a {
+    color: black;
+}
+
+.btn {    
+    background: white;
+    color: black;
+    font-size: large;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 5px;
 }

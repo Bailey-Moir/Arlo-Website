@@ -1,1 +1,24 @@
-<p>leaderboard works!</p>
+<div class="center-x">
+    <div class="runsContainer">
+        <div class="dropdown">
+            <button class="btn">placeholder</button>
+            <div class="options">
+                <button *ngFor="let category of categories">{{ category }}</button>
+            </div>
+        </div>
+        <h1>Title</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let record of getRecords()">
+                    <td>{{ record.name }}</td>
+                    <td>{{ dateToTime(record.time) }}</td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>

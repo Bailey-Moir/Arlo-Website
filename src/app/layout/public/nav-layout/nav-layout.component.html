@@ -1,11 +1,11 @@
-<div id="navbar">
+<div id="navbar" class="center-y">
     <img src="assets/imgs/icon.png" [routerLink]="'/'">
-    <div id="buttons">
-        <button *ngFor="let button of buttons" ngClass="{{ button.label | lowercase }}-btn" [routerLink]="button.url">
+    <div class="buttons center-y">
+        <button *ngFor="let button of buttons" ngClass="{{ button.label | lowercase }}-btn btn" [routerLink]="button.url">
             {{ button.label }}
         </button>
     </div>
-    <button class="download" routerLink="/download">
+    <button class="download center-y" routerLink="/download">
         <img src="assets/imgs/download.png">
     </button>
 </div>

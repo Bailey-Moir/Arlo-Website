@@ -1,0 +1,53 @@
+.runsContainer {
+    width: 80vw;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+
+    .dropdown {
+        width: 10vw;
+        margin-top: 40px;
+        margin-left: auto;
+
+        >button {
+            width: inherit;
+            
+        }
+
+        &:hover {
+            >button {
+                border-bottom-left-radius: 0;
+                border-radius: 5px 5px 0 0;
+            }
+
+            .options {
+                display: block;
+                border: 1px solid rgba(150, 150, 150, 0.3);
+		border-top: none;
+            }
+        }
+
+        .options {
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: inherit;
+            z-index: 1;
+            
+            >button {
+                width: inherit;
+                text-align: left;
+                display: block;
+                padding: 5px;
+            }
+        }
+    }
+
+    table {
+        background-color: black;
+        td, th {
+            padding: 5px;
+            background-color: white;
+        }
+    }
+}

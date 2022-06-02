@@ -5,8 +5,6 @@ $nav-height: 100px;
     height: $nav-height;
     position: fixed;
     top: 0px;
-    display: flex;
-    align-items: center;
     box-shadow: 0 0px 3px 2px rgba(0, 0, 0, 0.1);
 
     >img {
@@ -15,36 +13,25 @@ $nav-height: 100px;
        margin-left: 5px;
     }
     
-    >#buttons {
+    >.buttons {
         height: 50%;
-        display: flex;
 
         button {
             margin-left: 15px;
-            background: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: large;
-            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.195);
-            border-radius: 5px;
-            padding: 5px;
         }
     }
     
     >button.download {
-        display: flex;
-        align-items: center;
-
         background-color: rgb(75, 205, 75);
         color: white;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.195);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: large;
 
-        margin-left: auto;
-        margin-right: 15px;
         height: 70%;
-        border-radius: 5px;
+        margin: 0 15px 0 auto;
         padding: 5px;
+        border-radius: 5px;
         justify-self: right;
 
         img {

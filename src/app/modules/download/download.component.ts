@@ -14,8 +14,4 @@ export class DownloadComponent implements OnInit {
         "Linux",
         "Mac"
     ];
-
-    public download(platform: string) {
-
-    }
 }
